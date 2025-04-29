@@ -1,0 +1,963 @@
+/**
+ * NHS App styles
+ **/
+/**
+ * Public semantic variables of NHS colors
+ **/
+/* for IE10 and above but not Edge */
+/* for iOS devices */
+/* ------------------------------------------------------------ *\
+|* Colours
+\* ------------------------------------------------------------ */
+/**
+ * Colour palette -- private use for easier identification of colours
+ **/
+/* Greens */
+/* Yellows */
+/* Oranges */
+/* Reds */
+/* Grays */
+/* Whites */
+/* Blacks */
+/* Chart levels */
+/* Discussions timeline colours -- these are fixed elements that should not be theme-based */
+/* Privacy flags */
+/* Symptom severities */
+/* General */
+/* Typography */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-weight#common_weight_name_mapping */
+/* Lists */
+/* Buttons */
+/* NHS UK */
+@font-face {
+  font-family: 'Frutiger W01';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/FrutigerLTW01-55Roman.eot?#iefix");
+  src: url("../fonts/FrutigerLTW01-55Roman.eot?#iefix") format("eot"), url("../fonts/FrutigerLTW01-55Roman.woff2?v=683-RC3") format("woff2"), url("../fonts/FrutigerLTW01-55Roman.woff?v=683-RC3") format("woff"), url("../fonts/FrutigerLTW01-55Roman.ttf?v=683-RC3") format("truetype"), url("../fonts/FrutigerLTW01-55Roman.svg#7def0e34-f28d-434f-b2ec-472bde847115") format("svg");
+}
+@font-face {
+  font-family: 'Frutiger W01';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/FrutigerLTW01-65Bold.eot?#iefix");
+  src: url("../fonts/FrutigerLTW01-65Bold.eot?#iefix") format("eot"), url("../fonts/FrutigerLTW01-65Bold.woff2?v=683-RC3") format("woff2"), url("../fonts/FrutigerLTW01-65Bold.woff?v=683-RC3") format("woff"), url("../fonts/FrutigerLTW01-65Bold.ttf?v=683-RC3") format("truetype"), url("../fonts/FrutigerLTW01-65Bold.svg#eae74276-dd78-47e4-9b27-dac81c3411ca") format("svg");
+}
+.nhsapp {
+  font-family: "Frutiger W01";
+  padding: 0.7em 0;
+  text-align: left;
+  background-color: #FFFFFF;
+  font-size: 16px;
+  line-height: 24px;
+}
+.nhsapp.backbutton, .nhsapp.wayfinder {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  background-color: #f0f4f5;
+}
+.nhsapp.wayfinder {
+  font-size: 17px;
+  height: 80px;
+  display: flex;
+  background-color: #005eb8;
+}
+.nhsapp.wayfinder .container {
+  display: flex;
+  align-items: center;
+}
+.nhsapp.wayfinder img {
+  margin-right: auto;
+}
+.nhsapp.wayfinder a {
+  color: #FFF;
+  margin-left: 8px;
+}
+.nhsapp.wayfinder a:focus {
+  color: #212b32;
+  background-color: #FFEB3B;
+  box-shadow: 0 -2px #FFEB3B, 0 4px #212b32;
+  text-decoration: none;
+}
+.nhsapp.wayfinder a #logout-text-short {
+  display: none;
+}
+@media (max-width: 480px) {
+  .nhsapp.wayfinder a #logout-text-long {
+    display: none;
+  }
+  .nhsapp.wayfinder a #logout-text-short {
+    display: inline;
+  }
+}
+.nhsapp.banner {
+  position: sticky;
+  min-height: 35px;
+  background-color: #d8dde0;
+  color: #212b32;
+  font-size: 14px;
+  border-bottom: 1px solid #979797;
+  padding-bottom: 6px;
+  z-index: 999;
+}
+.nhsapp #link-nhsapp-back {
+  display: inline-block;
+  padding-left: 16px;
+  position: relative;
+  line-height: 16px;
+  color: #005eb8;
+}
+.nhsapp #link-nhsapp-back svg {
+  height: 24px;
+  left: -8px;
+  position: absolute;
+  top: -4px;
+  width: 24px;
+  fill: #005eb8;
+}
+.nhsapp #link-nhsapp-back:hover, .nhsapp #link-nhsapp-back:hover:active {
+  text-decoration: underline;
+  color: #7c2855;
+}
+.nhsapp #link-nhsapp-back:hover svg, .nhsapp #link-nhsapp-back:hover:active svg {
+  fill: #7c2855;
+}
+.nhsapp #link-nhsapp-back:focus {
+  background-color: #FFEB3B;
+  color: #212b32;
+  border-bottom: 4px solid #212b32;
+  text-decoration: none;
+  outline: none;
+}
+.nhsapp #link-nhsapp-back:focus svg {
+  fill: #212b32;
+}
+.nhsapp #link-nhsapp-back:focus:hover {
+  color: #7c2855;
+}
+.nhsapp #link-nhsapp-back:active {
+  color: #002f5c;
+}
+.nhsapp #link-nhsapp-back:active:focus {
+  color: #002f5c;
+}
+
+.mobile-optimized .nhsapp.banner {
+  margin-bottom: -2px;
+}
+
+.nhs-menu-background {
+  background-color: #f0f4f5;
+}
+
+.nhsmenu {
+  padding: 0;
+  background-color: #f0f4f5;
+}
+.nhsmenu .container {
+  padding: 0;
+}
+.nhsmenu h1 {
+  padding: 8px 0 32px 16px;
+  font-size: 32px;
+  line-height: 2em;
+  height: auto;
+  display: block;
+}
+.nhsmenu li {
+  margin: 2px 0;
+  border-top: 1px solid #f0f4f5;
+  border-bottom: 1px solid #f0f4f5;
+  position: relative;
+  background-color: #FFFFFF;
+}
+.nhsmenu li:hover {
+  background-color: #003D78;
+}
+.nhsmenu li a {
+  display: flex;
+  align-items: center;
+  padding: 16px 4px 16px 16px;
+  line-height: 1.5;
+  color: #005eb8;
+  font-weight: 600;
+  justify-content: space-between;
+}
+.nhsmenu li a:hover {
+  color: white;
+  text-decoration: none;
+}
+.nhsmenu li a:hover .nhs-menu-description {
+  color: inherit;
+}
+.nhsmenu li a .nhs-menu-element {
+  flex: 1 0;
+  min-width: 0;
+  display: inline-flex;
+  flex-direction: column;
+}
+.nhsmenu li a .nhs-menu-description {
+  font-weight: normal;
+  color: initial;
+  font-size: 16px;
+  line-height: 24px;
+}
+.nhsmenu li a svg {
+  width: 34px;
+  fill: #aeb7bd;
+}
+
+.nhs-navigation-menu {
+  margin: 20px -15px 100px -15px;
+  font-size: 18px;
+  line-height: 24px;
+}
+.nhs-navigation-menu .nhs-navigation-link:hover, .nhs-navigation-menu li:hover {
+  background-color: #FFF;
+  color: #7c2855;
+}
+.nhs-navigation-menu .nhs-navigation-link:hover .nhs-menu-text, .nhs-navigation-menu li:hover .nhs-menu-text {
+  text-decoration: underline;
+}
+.nhs-navigation-menu .nhs-navigation-link {
+  border-bottom: 1px solid #aeb7bd;
+  padding-left: 22px;
+}
+.nhs-navigation-menu .nhs-navigation-link .icon {
+  margin-right: 6px;
+}
+.nhs-navigation-menu .nhs-navigation-link svg {
+  fill: #636363;
+}
+.nhs-navigation-menu .nhs-navigation-link .nhs-menu-text {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.nhs-navigation-menu .nhs-navigation-link:focus {
+  outline: none;
+  text-decoration: none;
+}
+.nhs-navigation-menu .nhs-navigation-link:focus .nhs-menu-text {
+  background-color: #FFEB3B;
+  color: #212b32;
+  border-bottom: 4px solid #212b32;
+  text-decoration: none;
+}
+
+.nhs-only, a.btn-secondary.nhs-only {
+  display: none;
+}
+
+.nhs-england-style .nhs-only, .nhs-england-style a.btn-secondary.nhs-only, .nhs-style .nhs-only, .nhs-style a.btn-secondary.nhs-only {
+  display: inline-block;
+}
+.nhs-england-style .nhs-hide, .nhs-style .nhs-hide {
+  display: none !important;
+}
+
+.message-box .section-heading {
+  background: #014151;
+}
+.message-box .section-heading h2 {
+  color: #FFF;
+  font-size: 20px;
+}
+.message-box .section-simple-content .bullet-points {
+  padding-top: 0;
+  padding-left: 22px;
+}
+
+.nhs-england-style {
+  color: #212b32;
+  background-color: #f0f4f5;
+  font-family: "Frutiger W01";
+  /* https://www.figma.com/design/dIPJsWDxITOKnwWeskmTHB/Guidelines?node-id=35-1152&t=4NwPqOrHbYRaMZYI-0 */
+  /** NHS heading styles **/
+  /* Primary Paragraph */
+}
+.nhs-england-style h1, .nhs-england-style h2, .nhs-england-style h3, .nhs-england-style h4, .nhs-england-style h5, .nhs-england-style .nhsuk-heading-xl, .nhs-england-style .nhsuk-heading-l, .nhs-england-style .nhsuk-heading-m, .nhs-england-style .nhsuk-heading-s, .nhs-england-style .nhsuk-heading-xs {
+  font-family: "Frutiger W01";
+  font-weight: bold;
+  color: #212b32;
+  marin-top: 0;
+}
+.nhs-england-style h1, .nhs-england-style .nhs-uk-heading-xl {
+  font-size: 48px;
+  line-height: 56px;
+}
+@media (max-width: 480px) {
+  .nhs-england-style h1, .nhs-england-style .nhs-uk-heading-xl {
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
+.nhs-england-style h1.subject, .nhs-england-style .nhs-uk-heading-xl.subject {
+  text-align: left;
+}
+.nhs-england-style h2, .nhs-england-style .nhs-uk-heading-l {
+  font-size: 32px;
+  line-height: 40px;
+}
+@media (max-width: 480px) {
+  .nhs-england-style h2, .nhs-england-style .nhs-uk-heading-l {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+.nhs-england-style h3, .nhs-england-style .nhs-uk-heading-m {
+  font-size: 24px;
+  line-height: 32px;
+}
+@media (max-width: 480px) {
+  .nhs-england-style h3, .nhs-england-style .nhs-uk-heading-m {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+.nhs-england-style h4, .nhs-england-style .nhsuk-heading-s {
+  font-size: 22px;
+  line-height: 32px;
+}
+@media (max-width: 480px) {
+  .nhs-england-style h4, .nhs-england-style .nhsuk-heading-s {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+.nhs-england-style h5, .nhs-england-style .nhsuk-heading-xs {
+  font-size: 19px;
+  line-height: 28px;
+}
+@media (max-width: 480px) {
+  .nhs-england-style h5, .nhs-england-style .nhsuk-heading-xs {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.nhs-england-style hr {
+  border-top: 1px solid #d8dde0;
+  margin: 24px 0;
+}
+.nhs-england-style hr.nhs-only {
+  display: block;
+}
+.nhs-england-style .nhsuk-body {
+  font-size: 19px;
+  line-height: 28px;
+  font-weight: normal;
+  color: #212b32;
+}
+@media (max-width: 480px) {
+  .nhs-england-style .nhsuk-body {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.nhs-england-style > .infoMessage {
+  font-size: 16px;
+  margin-top: 2em;
+}
+.nhs-england-style .container {
+  max-width: 640px;
+}
+.nhs-england-style .nhs-btn-group {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+.nhs-england-style .nhs-btn-group a:not(:last-child) {
+  margin-right: 24px;
+}
+@media (max-width: 641px) {
+  .nhs-england-style .nhs-btn-group {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .nhs-england-style .nhs-btn-group a:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+.nhs-england-style .section .section-heading, .nhs-england-style .section.plain-nhs-section .section-heading {
+  margin-bottom: 10px;
+}
+.nhs-england-style .section .section-heading h2, .nhs-england-style .section.plain-nhs-section .section-heading h2 {
+  margin-bottom: 10px;
+}
+.nhs-england-style .section .section-heading h2.nhs-message-box-heading, .nhs-england-style .section.plain-nhs-section .section-heading h2.nhs-message-box-heading {
+  color: #FFF;
+  margin: 0;
+  font-size: 19px;
+  line-height: 28px;
+}
+@media (max-width: 480px) {
+  .nhs-england-style .section .section-heading h2.nhs-message-box-heading, .nhs-england-style .section.plain-nhs-section .section-heading h2.nhs-message-box-heading {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.nhs-england-style .section .section-heading h2.nhs-important-box-header, .nhs-england-style .section.plain-nhs-section .section-heading h2.nhs-important-box-header {
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+.nhs-england-style textarea:focus, .nhs-england-style .select2-container-multi.select2-container-active, .nhs-england-style localeSelect:focus {
+  border: 2px solid #212b32;
+  box-shadow: inset 0 0 0 2px;
+  outline: 4px solid #FFEB3B !important;
+  outline-offset: 0;
+  transition: box-shadow 0s;
+}
+.nhs-england-style .select2-container-multi.select2-container-active .select2-choices {
+  border-color: #212b32;
+  box-shadow: inset 0 0 0 1px #212b32;
+  border-radius: 0;
+}
+.nhs-england-style .content-toggle {
+  font-size: 16px;
+  font-weight: 400;
+  color: #005eb8;
+  text-decoration: underline;
+  align-items: center;
+  line-height: 24px;
+}
+.nhs-england-style .content-toggle.close-link {
+  margin-bottom: 24px;
+}
+.nhs-england-style .content-toggle:hover {
+  text-decoration: none;
+  color: #7c2855;
+}
+.nhs-england-style .content-toggle:focus {
+  background-color: #FFEB3B;
+  color: #212b32;
+  border-bottom: 4px solid #212b32;
+  text-decoration: none;
+  padding-bottom: 8px;
+}
+.nhs-england-style .content-toggle:focus .nhs-minus-icon {
+  background: url("/images/nhs-minus-icon-black.svg?v=683-RC3") ;
+}
+.nhs-england-style .content-toggle:focus .nhs-plus-icon {
+  background: url("/images/nhs-plus-icon-black.svg?v=683-RC3") ;
+}
+.nhs-england-style .content-toggle .nhs-minus-icon {
+  background: url("/images/nhs-minus-icon.svg?v=683-RC3") ;
+}
+.nhs-england-style .content-toggle .nhs-plus-icon {
+  background: url("/images/nhs-plus-icon.svg?v=683-RC3") ;
+}
+.nhs-england-style .content-toggle .nhs-minus-icon, .nhs-england-style .content-toggle .nhs-plus-icon {
+  margin-right: 6px;
+}
+.nhs-england-style .privacy-label {
+  background-color: transparent;
+  font-size: 17px;
+  padding: 0;
+}
+.nhs-england-style .link-with-icon {
+  text-decoration: none;
+  display: flex;
+}
+.nhs-england-style .link-with-icon:hover {
+  color: #7c2855;
+  text-decoration: underline;
+}
+.nhs-england-style .link-with-icon:hover .image-and-title .item-title {
+  color: #7c2855;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 900;
+}
+.nhs-england-style .link-with-icon:focus {
+  text-decoration: none;
+}
+.nhs-england-style .link-with-icon:focus .nhs-link-icon {
+  background: url("/images/nhs-link-icon-black.svg?v=683-RC3") ;
+}
+.nhs-england-style .link-with-icon:focus .image-and-title {
+  background-color: #FFEB3B;
+  color: #212b32;
+  border-bottom: 4px solid #212b32;
+}
+.nhs-england-style .link-with-icon:focus .image-and-title .item-title {
+  color: #212b32;
+}
+.nhs-england-style .link-with-icon .nhs-link-icon {
+  background: url("/images/nhs-link-icon.svg?v=683-RC3") ;
+  margin-right: 6px;
+}
+.nhs-england-style .link-with-icon .image-and-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+  margin-top: 24px;
+}
+.nhs-england-style .link-with-icon .image-and-title .item-title {
+  color: #005eb8;
+  font-weight: 600;
+}
+.nhs-england-style .labelled-content {
+  margin-bottom: 24px;
+}
+.nhs-england-style .labelled-content .control-label {
+  font-size: 20px;
+  line-height: 28px;
+}
+.nhs-england-style .nhs-privacy-sub-heading {
+  font-size: 18px;
+  line-height: 26px;
+}
+.nhs-england-style a.btn-nhs-primary, .nhs-england-style a.btn-nhs-secondary, .nhs-england-style .btn-nhs-primary, .nhs-england-style .btn-nhs-secondary, .nhs-england-style .btn-primary {
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: bold;
+  padding: 12px 19px;
+  color: #FFF;
+  box-shadow: 0px 4px 0px #003317;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-left: 0px;
+  min-width: 135px;
+  min-height: 40px;
+}
+.nhs-england-style a.btn-nhs-primary:focus, .nhs-england-style a.btn-nhs-primary:focus:hover, .nhs-england-style a.btn-nhs-secondary:focus, .nhs-england-style a.btn-nhs-secondary:focus:hover, .nhs-england-style .btn-nhs-primary:focus, .nhs-england-style .btn-nhs-primary:focus:hover, .nhs-england-style .btn-nhs-secondary:focus, .nhs-england-style .btn-nhs-secondary:focus:hover, .nhs-england-style .btn-primary:focus, .nhs-england-style .btn-primary:focus:hover {
+  background-color: #FFEB3B;
+  color: #212b32;
+  border: 2px solid #FFEB3B;
+  box-shadow: 0px 4px 0px #003317;
+}
+.nhs-england-style a.btn-nhs-primary:hover, .nhs-england-style a.btn-nhs-secondary:hover, .nhs-england-style .btn-nhs-primary:hover, .nhs-england-style .btn-nhs-secondary:hover, .nhs-england-style .btn-primary:hover {
+  color: #FFF;
+  box-shadow: 0px 4px 0px #003317;
+}
+.nhs-england-style a.btn-nhs-primary:active, .nhs-england-style a.btn-nhs-secondary:active, .nhs-england-style .btn-nhs-primary:active, .nhs-england-style .btn-nhs-secondary:active, .nhs-england-style .btn-primary:active {
+  color: #FFF;
+}
+@media (max-width: 641px) {
+  .nhs-england-style a.btn-nhs-primary, .nhs-england-style a.btn-nhs-secondary, .nhs-england-style .btn-nhs-primary, .nhs-england-style .btn-nhs-secondary, .nhs-england-style .btn-primary {
+    font-size: 16px;
+    line-height: 24px;
+    width: 100%;
+  }
+}
+.nhs-england-style a.btn-nhs-primary, .nhs-england-style .btn-nhs-primary, .nhs-england-style .btn-primary {
+  background-color: #007f3b;
+  border-color: #007f3b;
+}
+.nhs-england-style a.btn-nhs-primary:hover, .nhs-england-style .btn-nhs-primary:hover, .nhs-england-style .btn-primary:hover {
+  background-color: #00662F;
+}
+.nhs-england-style a.btn-nhs-primary:active, .nhs-england-style .btn-nhs-primary:active, .nhs-england-style .btn-primary:active {
+  background-color: #003317;
+  border-color: #003317;
+}
+.nhs-england-style a.btn-nhs-primary:disabled, .nhs-england-style .btn-nhs-primary:disabled, .nhs-england-style .btn-primary:disabled {
+  background-color: #007f3b;
+  border-color: #007f3b;
+  opacity: 0.3;
+}
+.nhs-england-style .form-actions {
+  text-align: left;
+  border-top: none;
+  padding: 0px 0px;
+}
+.nhs-england-style a.btn-nhs-secondary, .nhs-england-style .btn-nhs-secondary {
+  font-size: 19px;
+  line-height: 28px;
+  font-weight: 600;
+  padding: 12px 22px;
+  color: #005eb8;
+  border: 2px solid #005eb8;
+  box-shadow: 0px 2px 0px #005eb8;
+  background-color: transparent;
+}
+.nhs-england-style a.btn-nhs-secondary:hover, .nhs-england-style .btn-nhs-secondary:hover {
+  color: #005eb8;
+  background-color: #d9e7f4;
+  box-shadow: 0px 2px 0px #005eb8;
+}
+.nhs-england-style a.btn-nhs-secondary:active, .nhs-england-style a.btn-nhs-secondary:active:hover, .nhs-england-style a.btn-nhs-secondary:active:focus, .nhs-england-style .btn-nhs-secondary:active, .nhs-england-style .btn-nhs-secondary:active:hover, .nhs-england-style .btn-nhs-secondary:active:focus {
+  color: #005eb8;
+  background-color: #bfd7ed;
+  border: 2px solid #005eb8;
+  box-shadow: none;
+  top: 4px;
+  position: relative;
+}
+.nhs-england-style a.btn-nhs-secondary:disabled, .nhs-england-style .btn-nhs-secondary:disabled {
+  background-color: #007f3b;
+  opacity: 0.5;
+  border-color: #005eb8;
+  pointer-events: none;
+}
+@media (max-width: 641px) {
+  .nhs-england-style a.btn-nhs-secondary, .nhs-england-style .btn-nhs-secondary {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .nhs-england-style a.btn-nhs-secondary, .nhs-england-style .btn-nhs-secondary {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.nhs-england-style .nhs-clickable-card:hover .nhs-clickable-card-text {
+  color: #7c2855;
+}
+.nhs-england-style .nhs-clickable-card:focus {
+  outline: none;
+  text-decoration: none;
+  box-shadow: none;
+}
+.nhs-england-style .nhs-clickable-card:focus .nhs-clickable-card-text {
+  background-color: #FFEB3B;
+  color: #212b32;
+  border-bottom: 4px solid #212b32;
+  text-decoration: none;
+}
+.nhs-england-style .plain-nhs-section {
+  background-color: transparent;
+  margin-bottom: 0;
+  padding-left: 0px;
+}
+.nhs-england-style .plain-nhs-section .section-simple-content {
+  padding-top: 0;
+}
+.nhs-england-style .plain-nhs-section .section-heading {
+  padding-bottom: 14px;
+}
+.nhs-england-style .plain-nhs-section .section-heading, .nhs-england-style .plain-nhs-section .section-simple-content {
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-bottom: 10px;
+  border: none;
+}
+.nhs-england-style .plain-nhs-section p {
+  margin-bottom: 0;
+}
+.nhs-england-style .plain-nhs-section p:not(:last-child) {
+  margin-bottom: 24px;
+}
+.nhs-england-style .nhs-heading {
+  padding-bottom: 16px;
+  padding-left: 0px;
+}
+@supports (-webkit-touch-callout: none) {
+  .nhs-england-style .nhs-heading {
+    padding-left: 20px;
+    padding-right: 30px;
+  }
+}
+.nhs-england-style .nhs-heading .section-heading {
+  padding-top: 10px;
+}
+.nhs-england-style .nhs-heading .section-heading h1 {
+  margin-bottom: 2px;
+}
+.nhs-england-style .nhs-subsection .section-heading {
+  padding-bottom: 0;
+}
+.nhs-england-style .nhs-subsection .section-heading h2 {
+  font-size: 24px;
+  line-height: 32px;
+  margin-top: 0;
+}
+.nhs-england-style .nhs-btn-row {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 64px;
+  padding-right: 0;
+  background-color: transparent;
+}
+.nhs-england-style .nhs-btn-row .btn-nhs-primary, .nhs-england-style .nhs-btn-row .btn-nhs-secondary {
+  margin-left: 0;
+}
+.nhs-england-style .nhs-error-box {
+  border: 3px #d5281b solid;
+  padding: 24px 16px;
+}
+.nhs-england-style .nhs-important-box {
+  background-color: #FFFBCE;
+  border-radius: 0;
+  margin-top: 8px;
+}
+.nhs-england-style .nhs-important-box .section-heading {
+  background-color: #FFEB3B;
+  padding: 8px 25px;
+  display: flex;
+  border: none;
+  align-self: flex-start;
+  margin-top: -8px;
+}
+.nhs-england-style .nhs-important-box .section-heading h3 {
+  margin-top: 0;
+}
+.nhs-england-style .nhs-important-box .section-simple-content {
+  padding-top: 20px;
+}
+.nhs-england-style .nhs-important-box .section-simple-content p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+.nhs-england-style .nhs-important-box .section-simple-content p:last-child {
+  margin-bottom: 0;
+}
+.nhs-england-style .nhs-link, .nhs-england-style .nhs-important-box .section-simple-content a, .nhs-england-style .nhs-info-notification .info-text a {
+  text-decoration: underline;
+  font-size: 16px;
+  color: #005eb8;
+}
+.nhs-england-style .nhs-link:hover, .nhs-england-style .nhs-important-box .section-simple-content a:hover, .nhs-england-style .nhs-info-notification .info-text a:hover {
+  text-decoration: none;
+  color: #7c2855;
+}
+.nhs-england-style .nhs-link:focus, .nhs-england-style .nhs-important-box .section-simple-content a:focus, .nhs-england-style .nhs-info-notification .info-text a:focus {
+  color: #212b32;
+  background-color: #FFEB3B;
+  box-shadow: 0 -2px #FFEB3B, 0 4px #212b32;
+  text-decoration: none;
+}
+.nhs-england-style .nhs-link:active, .nhs-england-style .nhs-important-box .section-simple-content a:active, .nhs-england-style .nhs-info-notification .info-text a:active {
+  color: #002f5c;
+}
+.nhs-england-style a.nhs-link {
+  font-size: 19px;
+  line-height: 28px;
+}
+@media (max-width: 480px) {
+  .nhs-england-style a.nhs-link {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.nhs-england-style .privacy-nhs-position {
+  margin: 15px 0px;
+}
+.nhs-england-style .section.message-box .section-heading, .nhs-england-style .section.nhs-danger-box .section-heading {
+  padding: 8px 14px;
+  border: none;
+  margin: 0;
+}
+.nhs-england-style .section.message-box .section-heading h2, .nhs-england-style .section.nhs-danger-box .section-heading h2 {
+  color: #FFF;
+  margin: 0;
+}
+.nhs-england-style .section.message-box .upside-down-triangle, .nhs-england-style .section.nhs-danger-box .upside-down-triangle {
+  background: url("/images/upside-down-triangle.svg?v=683-RC3") ;
+  width: 24px;
+  margin-top: -1px;
+  margin-left: 24px;
+}
+.nhs-england-style .section.message-box .section-simple-content, .nhs-england-style .section.nhs-danger-box .section-simple-content {
+  padding: 0 16px 16px 16px;
+}
+.nhs-england-style .section.message-box .bullet-points, .nhs-england-style .section.nhs-danger-box .bullet-points {
+  padding-top: 2px;
+  padding-left: 34px;
+}
+.nhs-england-style .section.message-box a, .nhs-england-style .section.nhs-danger-box a {
+  text-decoration: underline;
+  color: #005eb8;
+}
+.nhs-england-style .section.message-box a:hover, .nhs-england-style .section.nhs-danger-box a:hover {
+  text-decoration: none;
+  color: #7c2855;
+}
+.nhs-england-style .section.message-box a:focus, .nhs-england-style .section.nhs-danger-box a:focus {
+  color: #212b32;
+  background-color: #FFEB3B;
+  box-shadow: 0 -2px #FFEB3B, 0 4px #212b32;
+  text-decoration: none;
+}
+.nhs-england-style .section.message-box a:active, .nhs-england-style .section.nhs-danger-box a:active {
+  color: #002f5c;
+}
+.nhs-england-style .section.message-box {
+  margin-top: 40px;
+}
+.nhs-england-style .section.message-box .section-heading {
+  background-color: #005eb8;
+}
+.nhs-england-style .section.message-box .upside-down-triangle {
+  background: url("/images/upside-down-triangle.svg?v=683-RC3") ;
+}
+.nhs-england-style .section.message-box .section-simple-content {
+  padding: 0 16px 16px 16px;
+}
+.nhs-england-style .section.nhs-danger-box {
+  width: 100%;
+}
+.nhs-england-style .section.nhs-danger-box .section-heading {
+  background-color: #d5281b;
+}
+.nhs-england-style .section.nhs-danger-box .upside-down-triangle {
+  background: url("/images/upside-down-triangle-red.svg?v=683-RC3") ;
+}
+.nhs-england-style .section.nhs-danger-box .section-simple-content {
+  padding: 0 16px 16px 16px;
+}
+.nhs-england-style .section.nhs-danger-box #details {
+  margin-top: 16px;
+  margin-bottom: 0;
+  padding: 16px;
+}
+.nhs-england-style .nhs-green-box {
+  background-color: #007f3b;
+  border-radius: 0;
+  padding: 24px 32px;
+}
+.nhs-england-style .nhs-green-box.section .section-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
+}
+.nhs-england-style .nhs-checkbox {
+  margin: 0;
+}
+.nhs-england-style .nhs-checkbox input[type='checkbox'] {
+  border-radius: 0;
+  background-color: #FFF;
+  border-color: #212b32;
+  height: 40px;
+  width: 40px;
+}
+@supports (-webkit-appearance: none) or (-moz-appearance: none) {
+  .nhs-england-style .nhs-checkbox input[type='checkbox']:checked {
+    border-color: #212b32;
+    background: url("/images/nhs-tick-checkbox.svg?v=683-RC3") #FFF no-repeat center;
+  }
+}
+.nhs-england-style .nhs-checkbox input[type='checkbox']:focus, .nhs-england-style .nhs-checkbox input[type='checkbox']:focus:checked {
+  box-shadow: 0 0 0 4px #FFEB3B;
+  border: 4px solid #212b32;
+}
+.nhs-england-style .nhs-checkbox label {
+  padding-left: 42px;
+  padding-top: 0;
+  font-size: 16px;
+  line-height: 24px;
+}
+.nhs-england-style .niceRadio.updated input {
+  border-color: #212b32;
+  min-width: 28px;
+  min-height: 28px;
+}
+.nhs-england-style .niceRadio.updated input:hover {
+  box-shadow: 0px 0px 0px 4px #FFEB3B;
+}
+.nhs-england-style .niceRadio.updated input:checked, .nhs-england-style .niceRadio.updated input .checked {
+  border-color: #212b32;
+  background-color: #212b32;
+  box-shadow: inset 0 0 0 5px #fff;
+}
+.nhs-england-style .niceRadio.updated input:focus, .nhs-england-style .niceRadio.updated input:focus:checked {
+  box-shadow: inset 0 0 0 5px #fff, 0 0 0 4px #FFEB3B;
+}
+.nhs-england-style .niceRadio.updated .badge-text {
+  font-size: 16px;
+  line-height: 24px;
+  color: #212b32;
+  font-weight: 400;
+}
+.nhs-england-style .nhs-privacy-positioning {
+  margin: 20px 0px 20px 15px;
+}
+.nhs-england-style .second-row-nhs {
+  margin-top: -20px;
+}
+.nhs-england-style .nhs-info-notification {
+  width: 100%;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  margin-top: 30px;
+  display: flex;
+}
+.nhs-england-style .nhs-info-notification .nhs-info-icon {
+  margin-right: 10px;
+  background: url("/images/nhs-info-icon.svg?v=683-RC3") ;
+}
+.nhs-england-style .nhs-info-notification .info-text {
+  margin-top: 2px;
+}
+.nhs-england-style .nhs-privacy-heading {
+  margin-top: 30px;
+}
+.nhs-england-style#nhs-web-app-logout #container {
+  margin-top: 24px;
+}
+.nhs-england-style#nhs-web-app-logout h1 {
+  display: initial;
+}
+.nhs-england-style#nhs-web-app-logout .section {
+  margin-top: 24px;
+}
+.nhs-england-style#nhs-web-app-logout .section h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.nhs-england-style a.nhs-card-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  background-color: #FFFFFF;
+}
+.nhs-england-style a.nhs-card-link .nhs-card-element {
+  flex: 1 0;
+  min-width: 0;
+  display: inline-flex;
+  flex-direction: column;
+}
+.nhs-england-style a.nhs-card-link .nhs-card-element .nhs-card-text {
+  margin: 0;
+  color: #005eb8;
+}
+.nhs-england-style a.nhs-card-link .nhs-card-element .nhs-card-description {
+  margin-top: 4px;
+}
+.nhs-england-style a.nhs-card-link svg {
+  width: 34px;
+  fill: #005eb8;
+}
+.nhs-england-style a.nhs-card-link:hover {
+  color: #7c2855;
+  text-decoration: none;
+}
+.nhs-england-style a.nhs-card-link:hover .nhs-card-text {
+  color: #7c2855;
+  text-decoration: underline;
+}
+.nhs-england-style a.nhs-card-link:hover svg {
+  fill: #7c2855;
+}
+.nhs-england-style a.nhs-card-link:focus {
+  text-decoration: none;
+}
+.nhs-england-style a.nhs-card-link:focus .nhs-card-text {
+  color: #212b32;
+  background-color: #FFEB3B;
+  box-shadow: 0 -2px #FFEB3B, 0 4px #212b32;
+}
+.nhs-england-style a.nhs-card-link:active .nhs-card-text, .nhs-england-style a.nhs-card-link:active:hover .nhs-card-text {
+  color: #002f5c;
+}
+.nhs-england-style a.nhs-card-link:active:focus .nhs-card-text {
+  color: #212b32;
+}
+.nhs-england-style a.nhs-card-link:focus:hover .nhs-card-text {
+  text-decoration: none;
+}
