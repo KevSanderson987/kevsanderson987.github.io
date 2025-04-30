@@ -6660,7 +6660,6 @@ tr.message_unread h3 a {
 }
 .file-uploader .progress-animated .progress-bar,
 .file-uploader .progress-animated .bar {
-  background: url("../img/progressbar.gif?v=675") !important;
   filter: none;
 }
 .file-uploader .fileupload-process {
@@ -6672,7 +6671,6 @@ tr.message_unread h3 a {
   display: block;
   width: 32px;
   height: 32px;
-  background: url("../img/loading.gif?v=675") center no-repeat;
   background-size: contain;
 }
 .file-uploader .files audio, .file-uploader .files video {
