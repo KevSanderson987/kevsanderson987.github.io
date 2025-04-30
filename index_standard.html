@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://my.patientsknowbest.com/images/favicon.ico" type="image/ico">
+  <title>Patients Know Best - Error</title>
+  <link rel="stylesheet" href="./css/main-style.css" type="text/css">
+</head>
+<body class="centred-layout login-page">
+  <div id="header">
+    <h1 id="logo">
+    </h1>
+  <div id="inner" class="login-container">
+    <br>
+      <img src="./images/Shape.png" width="80" height="80" >
+        <h1>Patients Know Best encountered an error</h1><br>
+      Patients Know Best is currently unavailable.<br>
+      An update may be taking place. Please try again in a few minutes<br>
+
+    <br>
+
+  </table>
+<script>
+      function copyText() {
+          var text = document.getElementById("CfErrorText");
+          text.select();
+          document.execCommand("copy");
+          document.getElementById("copiedMessage").style.display = "block";
+          setTimeout(function(){
+           //document.getElementById("copiedMessage").style.display = "none";
+         }, 2000); // Hide message after 2 seconds.
+      }
+  </script>
+</div></div>
+</body>
+</html>
