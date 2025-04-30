@@ -1,5 +1,46 @@
 @charset "UTF-8";
-
+/*
+ *  Main styles for pkb webapp
+ */
+/* ------------------------------------------------------------ *\
+|* Colours
+\* ------------------------------------------------------------ */
+/**
+ * Colour palette -- private use for easier identification of colours
+ **/
+/* Greens */
+/* Yellows */
+/* Oranges */
+/* Reds */
+/* Grays */
+/* Whites */
+/* Blacks */
+/* Chart levels */
+/* Discussions timeline colours -- these are fixed elements that should not be theme-based */
+/* Privacy flags */
+/* Symptom severities */
+/* for IE10 and above but not Edge */
+/* for iOS devices */
+/* General */
+/* Typography */
+/* Lists */
+/* Buttons */
+/* NHS UK */
+/**
+ * Public semantic variables used by PKB's default theme
+ **/
+/* Colours */
+/**
+ * Public semantic variables of NHS colors
+ **/
+/* Vendor */
+/*! normalize.css? v2.1.0 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
 article,
 aside,
 details,
@@ -490,20 +531,19 @@ table {
 
 @font-face {
   font-family: "Muli";
-  src: url("../fonts/Muli.ttf?v=675");
+  src: url("../fonts/Muli.ttf");
   font-style: normal;
   font-weight: 100 900;
 }
 @font-face {
   font-family: "Mulish";
-  src: url("../fonts/Mulish-VariableFont_wght.ttf?v=675");
+  src: url("../fonts/Mulish-VariableFont_wght.ttf");
   font-style: normal;
   font-weight: 100 700 900;
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url("fonts/glyphicons-halflings-regular.eot?v=675");
-  src: url("fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff2?v=675") format("woff2"), url("../fonts/glyphicons-halflings-regular.woff?v=675") format("woff"), url("../fonts/glyphicons-halflings-regular.ttf?v=675") format("truetype"), url("../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
+  src: url("../fonts/glyphicons-halflings-regular.eot");
 }
 /* ===========================
    Base
@@ -3148,10 +3188,6 @@ footer.nhs-style .bottom-row #select-locale {
   border-radius: 0;
   border: 2px solid #4c6272;
 }
-footer.nhs-style .bottom-row .copyright {
-  padding-right: 35px;
-  background: url("/images/pkb-logo-nhs-footer.svg?v=675") no-repeat 100% 50%;
-}
 
 /* ==|====================
    Layout/Main
@@ -3420,14 +3456,6 @@ footer.nhs-style .bottom-row .copyright {
   outline-color: #014151 !important;
 }
 
-.search-dropdown-container #search-dropdown, .search-dropdown-container #s2id_search-dropdown {
-  background: url("/images/search.svg?v=675") ;
-  background-repeat: no-repeat;
-  padding: 0 0 0 42px;
-  background-position: 16px 50%;
-  border-radius: 4px;
-  font-weight: bold;
-}
 .search-dropdown-container #s2id_search-dropdown {
   font-size: 16px;
   background-color: #FFF !important;
@@ -3436,13 +3464,7 @@ footer.nhs-style .bottom-row .copyright {
   min-height: 40px;
   height: auto;
 }
-.search-dropdown-container #s2id_search-dropdown:hover {
-  background: url("/images/search-blue-secondary.svg?v=675") ;
-}
-.search-dropdown-container #s2id_search-dropdown.select2-dropdown-open {
-  border-color: #2B7D67;
-  background: url("/images/search-green.svg?v=675") ;
-}
+.
 .search-dropdown-container #s2id_search-dropdown > .select2-choice {
   height: 36px;
   line-height: 36px;
@@ -3635,20 +3657,6 @@ nav.account-navigation ul li#login a.active {
   display: block;
 }
 
-.nav-buttons > li > a .icon {
-  background-image: url("/images/2014/nav_sprites_blue.png?v=675");
-  background-position: -120px 0;
-  display: block;
-  float: left;
-  height: 110px;
-  margin: 15px 50px;
-  width: 120px;
-  cursor: pointer;
-}
-.nav-buttons > li > a:hover .icon {
-  background-image: url("/images/2014/nav_sprites_white.png?v=675");
-}
-
 .nav-buttons > li#discussion > a .icon {
   background-position: -120px 0;
 }
@@ -3665,12 +3673,6 @@ nav.account-navigation ul li#login a.active {
   background-position: 0px -730px;
 }
 
-.nav-buttons > li#thinkahead > a .icon {
-  background-image: url("/images/icons/thinkahead-logo.png?v=675");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: 66px 65px;
-}
 
 .nav-buttons > li#diary > a .icon {
   background-position: -120px -120px;
@@ -3708,12 +3710,6 @@ nav.account-navigation ul li#login a.active {
   background-position: -240px -480px;
 }
 
-.nav-buttons > li#social-care > a .icon {
-  background: url("../../images/social-care.svg?v=675") center no-repeat;
-}
-.nav-buttons > li#social-care > a:hover .icon {
-  background-image: url("../../images/social-care-activated.svg?v=675");
-}
 
 .nav-buttons li .nav-label {
   background-color: #FFF;
@@ -3784,18 +3780,6 @@ nav.account-navigation ul li#login a.active {
   background-color: #2B7D67;
 }
 
-ul.sub-nav li .icon {
-  background-image: url("/images/2014/sub-nav-sprites-blue.png?v=675");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  height: 80px;
-  width: 80px;
-  display: block;
-  margin: 15px auto 0;
-}
-ul.sub-nav li > a:hover .icon, ul.sub-nav a.active .icon {
-  background-image: url("/images/2014/sub-nav-sprites-white.png?v=675");
-}
 
 /*These background images apply to both buttons subnav and breadcrumbs subnav:*/
 .sub-nav #diagnoses .icon {
@@ -4287,13 +4271,6 @@ nav.account-navigation ul li {
   text-decoration: none;
 }
 
-.subnav-icon-48 {
-  background-image: url("/images/2014/sub-nav-sprites-blue.png?v=675");
-}
-
-.nav-icon-48 {
-  background-image: url("/images/2014/nav_sprites_blue.png?v=675");
-}
 
 .subnav-icon-48, .nav-icon-48 {
   background-repeat: no-repeat;
@@ -4383,25 +4360,11 @@ ul.page-actions li a.btn:hover, ul.page-actions li a.btn-arrow:hover {
   background-image: none;
   background-color: white;
 }
-ul.page-actions li a.btn .icon, ul.page-actions li a.btn-arrow .icon {
-  background-color: #3C7996;
-  background-image: url("/images/2014/action-sprites.png?v=675");
-  border-radius: 0 2px 2px 0;
-  box-shadow: 1px 1px rgba(0, 0, 0, 0.1);
-  position: absolute;
-  right: 0px;
-  top: 0px;
-  height: 40px;
-  width: 40px;
-}
+
 ul.page-actions li.book_gp_appointment a .icon {
   background-position: 0px -397px;
 }
-ul.page-actions li.update_my_record a .icon {
-  background-position: 0px 0px;
-  background-color: #60C6A9;
-  background-image: url("/images/medmij_heart_40.png?v=675");
-}
+
 ul.page-actions li.update_my_record a.btn:hover .icon, ul.page-actions li.update_my_record a.btn-arrow:hover .icon {
   background-color: #2B9E7D;
   box-shadow: 1px 1px #2B9E7D;
@@ -4416,12 +4379,7 @@ ul.page-actions li.add_diagnosis a .icon {
 ul.page-actions li.add_allergy a .icon {
   background-position: -80px -360px;
 }
-ul.page-actions li.add_symptoms a .icon {
-  background-image: url("/images/icons/add-white-24.png?v=675");
-  padding: 8px;
-  background-origin: content-box;
-  background-repeat: no-repeat;
-}
+
 ul.page-actions li.add_measurements a .icon {
   background-position: -40px -80px;
 }
@@ -4593,13 +4551,7 @@ video::-webkit-media-controls-start-playback-button {
   display: flex;
   align-items: center;
 }
-.file_download .download-file .fallback-download-link:hover .icon-download {
-  background: url("/images/icon-download-hover.svg?v=675") ;
-}
-.file_download .download-file .fallback-download-link .icon-download {
-  display: inline-block;
-  background: url("/images/icon-download.svg?v=675") ;
-}
+
 .file_download:not(:last-child) {
   margin-bottom: 10px;
 }
@@ -4637,24 +4589,12 @@ video::-webkit-media-controls-start-playback-button {
 .report-wrapper:hover span {
   color: #014151;
 }
-.report-wrapper:hover .report-document-link .icon-report {
-  background: url("/images/icon-report-hover.svg?v=675") ;
-}
-.report-wrapper .icon-chevron {
-  background: url("/images/chevron-down.svg?v=675") ;
-}
+
 .report-wrapper .report-document-link {
   height: 24px;
   margin-left: 8px;
 }
-.report-wrapper .report-document-link .icon-report {
-  background: url("/images/icon-report.svg?v=675") ;
-  display: inline-block;
-}
-.report-wrapper.expanded i.icon-chevron {
-  flex: 0 0 auto;
-  background: url("/images/chevron-up.svg?v=675") ;
-}
+
 .report-wrapper.expanded .dropdown {
   z-index: 1;
   display: inline-flex;
@@ -5074,50 +5014,6 @@ button.cancel.btn-arrow {
   color: #000;
 }
 
-a.btn.link-down, a.link-down.btn-arrow {
-  background-image: url("/images/2014/link-sprites.png?v=675");
-  background-position: right -60px;
-  background-repeat: no-repeat;
-  padding-right: 30px;
-  color: white !important;
-}
-
-a.btn.link-down:hover, a.link-down.btn-arrow:hover {
-  background-position: right -100px;
-  background-color: #00576D;
-  background-image: url("/images/2014/link-sprites.png?v=675");
-  background-repeat: no-repeat;
-  box-shadow: none;
-}
-
-a.btn.link-up, a.link-up.btn-arrow {
-  background-image: url("/images/2014/link-sprites.png?v=675");
-  background-position: right 10px;
-  background-repeat: no-repeat;
-  padding-right: 30px;
-}
-
-a.btn.link-up:hover, a.link-up.btn-arrow:hover {
-  background-position: right -30px;
-  background-color: #00576D;
-  background-image: url("/images/2014/link-sprites.png?v=675");
-  background-repeat: no-repeat;
-  box-shadow: none;
-}
-
-.btn.tick, .tick.btn-arrow {
-  background-image: url("/images/2014/link-sprites.png?v=675");
-  background-position: right -470px;
-  background-repeat: no-repeat;
-  padding-right: 25px;
-}
-
-.btn-arrow {
-  background-image: url("/images/2014/link-sprites.png?v=675");
-  background-position: right -190px;
-  background-repeat: no-repeat;
-  padding-right: 25px;
-}
 
 .btn-datepicker {
   color: #3C7996;
@@ -5215,12 +5111,6 @@ input[type="checkbox"] + label.nice-checkmark {
   background-repeat: no-repeat;
   vertical-align: middle;
   padding: 0;
-}
-input[type="checkbox"]:checked + label.nice-checkmark {
-  background-color: #2B7D67;
-  border-color: #2B7D67;
-  background-image: url("/images/2014/check.png?v=675");
-  background-size: 14px 14px;
 }
 input[type="checkbox"].large-check + label.nice-checkmark {
   width: 20px;
@@ -5330,11 +5220,7 @@ button.btn-arrow:hover {
   background: none repeat scroll 0 0 #00576D;
 }
 
-a.btn-arrow:hover, input.btn-arrow:hover, button.btn-arrow:hover {
-  background-position: right -510px;
-  background-image: url("/images/2014/link-sprites.png?v=675");
-  background-repeat: no-repeat;
-}
+
 
 a.btn-cancel, input.btn-cancel, button.btn-cancel {
   color: #00576D;
@@ -5557,26 +5443,6 @@ a.btn-secondary.edit, .btn-secondary.edit {
   flex-shrink: 0;
   height: 40px;
   padding: 8px 16px;
-}
-a.btn-secondary.edit > span.icon-24, .btn-secondary.edit > span.icon-24 {
-  background: url("/images/edit-data.svg?v=675") ;
-  margin-right: 10px;
-}
-a.btn-secondary.lock-state-change, .btn-secondary.lock-state-change {
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
-  height: 40px;
-  padding: 8px 16px;
-  margin: 0 7px 16px auto;
-}
-a.btn-secondary.lock-state-change > span.lock-closed, .btn-secondary.lock-state-change > span.lock-closed {
-  background: url("/images/lock-care-plan-icon.svg?v=675") ;
-  margin-right: 10px;
-}
-a.btn-secondary.lock-state-change > span.lock-open, .btn-secondary.lock-state-change > span.lock-open {
-  background: url("/images/unlock-care-plan-icon.svg?v=675") ;
-  margin-right: 10px;
 }
 
 #datepicker {
@@ -6128,33 +5994,7 @@ section#discussion .section-heading .main-icon label {
 section#discussion .section-heading .main-icon #icon {
   width: 24px;
 }
-section#discussion .section-heading .main-icon .icon-discussion-default,
-section#discussion .section-heading .main-icon .encounter-VIRTUAL {
-  background: url("/images/encounter-VIRTUAL.svg?v=675") ;
-}
-section#discussion .section-heading .main-icon .encounter-IN_PATIENT {
-  background: url("/images/encounter-IN_PATIENT.svg?v=675") ;
-}
-section#discussion .section-heading .main-icon .encounter-EMERGENCY {
-  background: url("/images/encounter-EMERGENCY.svg?v=675") ;
-}
-section#discussion .section-heading .main-icon .encounter-DAYTIME {
-  background: url("/images/encounter-DAYTIME.svg?v=675") ;
-}
-section#discussion .section-heading .main-icon .encounter-AMBULATORY {
-  background: url("/images/encounter-AMBULATORY.svg?v=675") ;
-}
-section#discussion .section-heading .main-icon .encounter-HOME {
-  background: url("/images/encounter-HOME.svg?v=675") ;
-}
-section#discussion .section-heading .main-icon .encounter-OUT_PATIENT,
-section#discussion .section-heading .main-icon .icon-outpatient {
-  background: url("/images/encounter-DAYTIME.svg?v=675") ;
-}
-section#discussion .section-heading .main-icon .encounter-FIELD,
-section#discussion .section-heading .main-icon .icon-sun {
-  background: url("/images/encounter-DAYTIME.svg?v=675") ;
-}
+
 section#discussion .section-heading .participants {
   margin: 12px -16px 0 -16px;
   padding-top: 8px;
@@ -6195,10 +6035,7 @@ section#discussion .section-heading .participants .participant span::after {
 section#discussion .section-heading .participants .inactive-name {
   color: grey;
 }
-section#discussion .section-heading .participants .info-icon {
-  background-image: url("/images/info.svg?v=675");
-  margin-left: 0px;
-}
+
 section#discussion .section-heading .participants ul.discussion-participants > li:last-of-type li.participant:last-of-type span::after {
   content: '';
 }
@@ -6283,21 +6120,6 @@ section#discussion .section-body .message-wrapper.my-message .message-container 
 }
 section#discussion .section-body .message-wrapper.my-message .message-container .message .message-body a, section#discussion .section-body .message-wrapper.my-message .message-container .message .message-body p, section#discussion .section-body .message-wrapper.my-message .message-container .conversation-item .message-body a, section#discussion .section-body .message-wrapper.my-message .message-container .conversation-item .message-body p {
   color: inherit;
-}
-section#discussion .section-body .message-wrapper.my-message .message-container .message .message-body .attachments .fallback-download-link:hover .icon-download, section#discussion .section-body .message-wrapper.my-message .message-container .conversation-item .message-body .attachments .fallback-download-link:hover .icon-download {
-  background: url("/images/icon-download-white-secondary.svg?v=675") ;
-}
-section#discussion .section-body .message-wrapper.my-message .message-container .message .message-body .attachments .fallback-download-link .icon-download, section#discussion .section-body .message-wrapper.my-message .message-container .conversation-item .message-body .attachments .fallback-download-link .icon-download {
-  background: url("/images/icon-download-white.svg?v=675") ;
-}
-section#discussion .section-body .message-wrapper.my-message .message-container .message .message-body .attachments .report-wrapper:hover span, section#discussion .section-body .message-wrapper.my-message .message-container .conversation-item .message-body .attachments .report-wrapper:hover span {
-  color: #F5F8F9;
-}
-section#discussion .section-body .message-wrapper.my-message .message-container .message .message-body .attachments .report-wrapper:hover .icon-report, section#discussion .section-body .message-wrapper.my-message .message-container .conversation-item .message-body .attachments .report-wrapper:hover .icon-report {
-  background: url("/images/icon-report-white-secondary.svg?v=675") ;
-}
-section#discussion .section-body .message-wrapper.my-message .message-container .message .message-body .attachments .report-wrapper .icon-report, section#discussion .section-body .message-wrapper.my-message .message-container .conversation-item .message-body .attachments .report-wrapper .icon-report {
-  background: url("/images/icon-report-white.svg?v=675") ;
 }
 section#discussion .section-body .message-wrapper.my-message .message-container .message .message-body .attachments a:not(.not-attachment), section#discussion .section-body .message-wrapper.my-message .message-container .message .message-body .attachments i, section#discussion .section-body .message-wrapper.my-message .message-container .message .message-body .attachments span:not(.video-fallback-text), section#discussion .section-body .message-wrapper.my-message .message-container .conversation-item .message-body .attachments a:not(.not-attachment), section#discussion .section-body .message-wrapper.my-message .message-container .conversation-item .message-body .attachments i, section#discussion .section-body .message-wrapper.my-message .message-container .conversation-item .message-body .attachments span:not(.video-fallback-text) {
   color: #FFF;
@@ -6415,12 +6237,7 @@ section#discussion .section-body .message-wrapper .composer .composer-name-wrapp
   padding-right: 4px;
   display: inline-block;
 }
-section#discussion .section-body .message-wrapper .composer .composer-name-wrapper .info-icon {
-  background-image: url("/images/info.svg?v=675");
-  flex-shrink: 0;
-  margin-left: 0px;
-  margin-bottom: 4px;
-}
+
 section#discussion .section-body .message-wrapper .composer span::after {
   content: '';
 }
@@ -6612,16 +6429,7 @@ section#discussion .deactivated-pro-popup-contents .body {
   display: flex;
   align-items: center;
 }
-#reply #reply-button span.reply-icon {
-  height: 14px;
-  margin-right: 10px;
-  background: url("/images/reply.svg?v=675") ;
-}
-#reply span.pipe-icon {
-  background: url("/images/pipe.svg?v=675") ;
-  width: 2px;
-  height: 24px;
-}
+
 #reply #input-attachment-container, #reply .form-actions {
   display: none;
 }
@@ -6765,9 +6573,7 @@ tr.message_unread h3 a {
 .nhs-england-style #reply #reply-button {
   color: #005eb8;
 }
-.nhs-england-style #reply #reply-button span.reply-icon {
-  background: url("/images/nhs-reply.svg?v=675") ;
-}
+
 .nhs-england-style #reply #message-form-group, .nhs-england-style #reply .input-and-heading, .nhs-england-style #reply #input-attachment-container {
   margin-bottom: 0;
 }
@@ -6841,21 +6647,7 @@ tr.message_unread h3 a {
 .file-uploader .delete span div {
   margin-left: 10px;
 }
-.file-uploader .delete span div.delete-data {
-  background: url("/images/delete-data.svg?v=675") ;
-}
-.file-uploader .fileinput-button {
-  position: relative;
-  display: flex;
-  margin: 0;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-.file-uploader .fileinput-button span.icon-paperclip {
-  background: url("/images/icon-paperclip.svg?v=675") ;
-  display: inline-block;
-  background-repeat: no-repeat;
-}
+
 .file-uploader .file-input {
   display: none;
 }
@@ -6868,7 +6660,6 @@ tr.message_unread h3 a {
 }
 .file-uploader .progress-animated .progress-bar,
 .file-uploader .progress-animated .bar {
-  background: url("../img/progressbar.gif?v=675") !important;
   filter: none;
 }
 .file-uploader .fileupload-process {
@@ -6880,7 +6671,6 @@ tr.message_unread h3 a {
   display: block;
   width: 32px;
   height: 32px;
-  background: url("../img/loading.gif?v=675") center no-repeat;
   background-size: contain;
 }
 .file-uploader .files audio, .file-uploader .files video {
@@ -6944,10 +6734,7 @@ tr.message_unread h3 a {
     border: solid 2px #3C7996;
     border-radius: 4px;
   }
-  .checkbox-new input[type='checkbox']:checked {
-    border-color: #2B7D67;
-    background: url("/images/tick-16.svg?v=675") #2B7D67 no-repeat center;
-  }
+
   .checkbox-new input[type='checkbox']:disabled {
     background-color: #E8E8E8;
     border: none;
@@ -6969,9 +6756,7 @@ tr.message_unread h3 a {
   /* Focus style for keyboard-focus on browsers
    that do support :focus-visible */
 }
-.checkbox-new input[type='checkbox']:checked {
-  background: url("/images/tick-16.svg?v=675") #2B7D67 no-repeat center;
-}
+
 .checkbox-new input[type='checkbox']:hover {
   border-color: #00576D;
 }
@@ -7037,10 +6822,8 @@ tr.message_unread h3 a {
   -ms-user-select: none;
   user-select: none;
 }
-.niceRadio.updated label .privacy-icon {
-  margin-right: 8px;
-  background: url("/images/privacy-locked-24.svg?v=675") ;
-}
+
+
 .niceRadio.updated label .badge-text {
   font-weight: bold;
   line-height: 1.5;
@@ -7065,18 +6848,7 @@ tr.message_unread h3 a {
   /* Focus style for keyboard-focus on browsers
    that do support :focus-visible */
 }
-.niceRadio.updated input:checked ~ label .privacy-icon.privacy-general-updated-24 {
-  background: url("/images/privacy-general-updated-24.svg?v=675") ;
-}
-.niceRadio.updated input:checked ~ label .privacy-icon.privacy-social-updated-24 {
-  background: url("/images/privacy-social-updated-24.svg?v=675") ;
-}
-.niceRadio.updated input:checked ~ label .privacy-icon.privacy-sexual-updated-24 {
-  background: url("/images/privacy-sexual-updated-24.svg?v=675") ;
-}
-.niceRadio.updated input:checked ~ label .privacy-icon.privacy-mental-updated-24 {
-  background: url("/images/privacy-mental-updated-24.svg?v=675") ;
-}
+
 .niceRadio.updated input:checked, .niceRadio.updated input.checked {
   background-color: #2B7D67;
   border-color: #2B7D67;
@@ -8228,22 +8000,6 @@ nav.account-navigation ul.navbar-nav {
 nav.account-navigation ul.navbar-nav li a {
   margin: 0 0 20px 0;
 }
-nav.account-navigation ul.navbar-nav span.nav-icon {
-  background-image: url("/images/2014/nav_sprites_blue.png?v=675");
-  background-size: 75px;
-  display: inline-block;
-  vertical-align: middle;
-  width: 25px;
-  height: 25px;
-}
-nav.account-navigation ul.navbar-nav span.nav-submenu-icon {
-  background-image: url("/images/2014/sub-nav-sprites-blue.png?v=675");
-  background-size: 60px;
-  display: inline-block;
-  vertical-align: middle;
-  width: 20px;
-  height: 20px;
-}
 
 #navbar-discussions-link > span.nav-icon {
   background-position: -25px 0;
@@ -8444,86 +8200,6 @@ nav.account-navigation ul.navbar-nav span.nav-submenu-icon {
   vertical-align: middle;
 }
 
-.icon-prev {
-  background-image: url("../../images/icons/icon-prev.png?v=675");
-  width: 9px;
-  height: 15px;
-  margin-bottom: 2px;
-}
-
-.icon-next {
-  background-image: url("../../images/icons/icon-next.png?v=675");
-  width: 9px;
-  height: 15px;
-  margin-bottom: 2px;
-}
-
-.icon-discussion-default,
-.icon-VIRTUAL,
-.icon-e-visit {
-  background-image: url("../../images/icons/icon-e-visit.png?v=675");
-  width: 34px;
-  height: 32px;
-}
-
-.icon-IN_PATIENT,
-.icon-bed {
-  background-image: url("../../images/icons/icon-bed.png?v=675");
-  width: 36px;
-  height: 24px;
-}
-
-.icon-EMERGENCY,
-.icon-ambulance {
-  background-image: url("../../images/icons/icon-ambulance.png?v=675");
-  width: 36px;
-  height: 25px;
-}
-
-.icon-DAYTIME,
-.icon-daytime {
-  background-image: url("../../images/icons/icon-daytime.png?v=675");
-  width: 34px;
-  height: 34px;
-}
-
-.icon-AMBULATORY,
-.icon-doctor {
-  background-image: url("../../images/icons/icon-doctor.png?v=675");
-  width: 28px;
-  height: 36px;
-}
-
-.icon-HOME,
-.icon-home {
-  background-image: url("../../images/icons/icon-home.png?v=675");
-  width: 30px;
-  height: 34px;
-}
-
-.icon-OUT_PATIENT,
-.icon-outpatient {
-  background-image: url("../../images/icons/icon-outpatient.png?v=675");
-  width: 36px;
-  height: 36px;
-}
-
-.icon-FIELD,
-.icon-sun {
-  background-image: url("../../images/icons/icon-sun.png?v=675");
-  width: 30px;
-  height: 30px;
-}
-
-.icon-social-care {
-  background-image: url("../../images/social-care.svg?v=675");
-  height: 110px;
-  width: 120px;
-  margin: 15px 0;
-}
-.icon-social-care:hover {
-  background-image: url("../../images/social-care-activated.svg?v=675");
-}
 
 .consent-team-logo {
   width: 100%;
@@ -8594,21 +8270,11 @@ button:hover .fa {
   min-width: 48px;
 }
 
-.icon-close-x {
-  background: url("/images/x-24.svg?v=675") ;
-}
 
 .bullet-point {
   height: 8px;
   min-width: 8px;
   display: inline-block;
-}
-.bullet-point.bullet-point {
-  background: url("/images/bullet-point.svg?v=675") ;
-}
-
-.icon-monitoring {
-  background: url("/images/monitoring-24.svg?v=675") ;
 }
 
 .bullet-point-blue {
@@ -8616,40 +8282,13 @@ button:hover .fa {
   min-width: 10px;
   display: inline-block;
 }
-.bullet-point-blue.bullet-point-blue {
-  background: url("/images/bullet-point-blue.svg?v=675") ;
-}
 
-.mid-point {
-  background: url("/images/bullet-point.svg?v=675") ;
-  height: 4px;
-  min-width: 4px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-  display: inline-block;
-}
-
-.icon-add {
-  background: url("/images/add-24.svg?v=675") ;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-  display: inline-block;
-}
 
 .preserve-aspect-ratio {
   width: 100%;
   height: auto;
 }
 
-.icon-settings {
-  background: url("/images/settings-24.svg?v=675") ;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-  display: inline-block;
-}
 
 /* =======================
    Images
@@ -8705,15 +8344,7 @@ li.data-point li.source-wrapper span.source-type {
   margin-right: 8px;
   flex-shrink: 0;
 }
-li.data-point li.source-wrapper span.source-type.source-type-device-16 {
-  background: url("/images/source-type-device-16.svg?v=675") ;
-}
-li.data-point li.source-wrapper span.source-type.source-type-person-16 {
-  background: url("/images/source-type-person-16.svg?v=675") ;
-}
-li.data-point li.source-wrapper span.source-type.source-type-org-16 {
-  background: url("/images/source-type-org-16.svg?v=675") ;
-}
+
 li.data-point li .entry-subject {
   font-size: 20px;
   font-weight: bold;
@@ -8810,18 +8441,8 @@ li.data-point .item-content .graphs-col {
   letter-spacing: normal;
   vertical-align: bottom;
 }
-.privacy-label div.privacy-general-16 {
-  background: url("/images/privacy-general-16.svg?v=675") ;
-}
-.privacy-label div.privacy-social-16 {
-  background: url("/images/privacy-social-16.svg?v=675") ;
-}
-.privacy-label div.privacy-sexual-16 {
-  background: url("/images/privacy-sexual-16.svg?v=675") ;
-}
-.privacy-label div.privacy-mental-16 {
-  background: url("/images/privacy-mental-16.svg?v=675") ;
-}
+
+
 .privacy-label span {
   padding-left: 0.2875em;
 }
@@ -8841,12 +8462,7 @@ li.data-point .item-content .graphs-col {
   padding-right: 0.25em;
   flex-shrink: 1;
 }
-.info .info-icon {
-  background: url("/images/info.svg?v=675") no-repeat;
-  pointer-events: none;
-  flex-shrink: 0;
-  margin-left: 0px;
-}
+
 .info:hover {
   cursor: pointer;
 }
@@ -8892,25 +8508,7 @@ li.data-point .item-content .graphs-col {
   margin-bottom: 0.5em;
 }
 
-.dots {
-  cursor: pointer;
-  margin-left: auto;
-  flex-shrink: 0;
-  background: url("/images/dots.svg?v=675") center no-repeat;
-}
-.dots:hover {
-  background: url("/images/dots-hovered.svg?v=675") #F5F8F9 center no-repeat;
-}
-.dots:focus {
-  background: url("/images/dots-focused.svg?v=675") #F5F8F9 center no-repeat;
-}
-.dots:active {
-  background: url("/images/dots-activated.svg?v=675") #DCE5EA center no-repeat;
-}
-.dots.expanded, .dots.expanded:active {
-  background: url("/images/dots-expanded.svg?v=675") #2B7D67 center no-repeat;
-  border-color: #2B7D67;
-}
+
 .dots.expanded .dropdown, .dots.expanded:active .dropdown {
   z-index: 1;
   display: inline-flex;
@@ -8929,45 +8527,7 @@ li.data-point .item-content .graphs-col {
 .dots.expanded .dropdown .dropdown-item:hover, .dots.expanded:active .dropdown .dropdown-item:hover {
   background-color: #3C7996;
 }
-.dots.expanded .dropdown .dropdown-item:hover .edit-data, .dots.expanded:active .dropdown .dropdown-item:hover .edit-data {
-  background: url("/images/edit-data-activated.svg?v=675") ;
-}
-.dots.expanded .dropdown .dropdown-item:hover .delete-data, .dots.expanded:active .dropdown .dropdown-item:hover .delete-data {
-  background: url("/images/delete-data-activated.svg?v=675") ;
-}
-.dots.expanded .dropdown .dropdown-item:hover .change-privacy, .dots.expanded:active .dropdown .dropdown-item:hover .change-privacy {
-  background: url("/images/change-privacy-activated.svg?v=675") ;
-}
-.dots.expanded .dropdown .dropdown-item:hover .delete, .dots.expanded:active .dropdown .dropdown-item:hover .delete {
-  background: url("/images/delete-activated.svg?v=675") ;
-}
-.dots.expanded .dropdown .dropdown-item:hover .discuss, .dots.expanded:active .dropdown .dropdown-item:hover .discuss {
-  background: url("/images/discuss-activated.svg?v=675") ;
-}
-.dots.expanded .dropdown .dropdown-item:hover .cancellation, .dots.expanded:active .dropdown .dropdown-item:hover .cancellation {
-  background: url("/images/cancellation-activated.svg?v=675") ;
-}
-.dots.expanded .dropdown .dropdown-item:hover .change-appt, .dots.expanded:active .dropdown .dropdown-item:hover .change-appt {
-  background: url("/images/change-appt-activated.svg?v=675") ;
-}
-.dots.expanded .dropdown .dropdown-item:hover .add-participants, .dots.expanded:active .dropdown .dropdown-item:hover .add-participants {
-  background: url("/images/add-participants-activated.svg?v=675") ;
-}
-.dots.expanded .dropdown .dropdown-item:hover .leave-discussion, .dots.expanded:active .dropdown .dropdown-item:hover .leave-discussion {
-  background: url("/images/leave-discussion-activated.svg?v=675") ;
-}
-.dots.expanded .dropdown .dropdown-item:hover .assign-to-me, .dots.expanded:active .dropdown .dropdown-item:hover .assign-to-me {
-  background: url("/images/assign-to-me-activated.svg?v=675") ;
-}
-.dots.expanded .dropdown .dropdown-item:hover .assign-to-none, .dots.expanded:active .dropdown .dropdown-item:hover .assign-to-none {
-  background: url("/images/assign-to-none-activated.svg?v=675") ;
-}
-.dots.expanded .dropdown .dropdown-item:hover .archive-message, .dots.expanded:active .dropdown .dropdown-item:hover .archive-message {
-  background: url("/images/archive-message-activated.svg?v=675") ;
-}
-.dots.expanded .dropdown .dropdown-item:hover .unarchive-message, .dots.expanded:active .dropdown .dropdown-item:hover .unarchive-message {
-  background: url("/images/unarchive-message-activated.svg?v=675") ;
-}
+
 .dots.expanded .dropdown .dropdown-item:hover .data-point-action, .dots.expanded:active .dropdown .dropdown-item:hover .data-point-action {
   color: #FFF;
 }
@@ -8983,45 +8543,7 @@ li.data-point .item-content .graphs-col {
 .dots.expanded .dropdown .dropdown-item div, .dots.expanded:active .dropdown .dropdown-item div {
   margin: 0.5em 0 0.5em 0.5em;
 }
-.dots.expanded .dropdown .dropdown-item div.edit-data, .dots.expanded:active .dropdown .dropdown-item div.edit-data {
-  background: url("/images/edit-data.svg?v=675") ;
-}
-.dots.expanded .dropdown .dropdown-item div.delete-data, .dots.expanded:active .dropdown .dropdown-item div.delete-data {
-  background: url("/images/delete-data.svg?v=675") ;
-}
-.dots.expanded .dropdown .dropdown-item div.change-privacy, .dots.expanded:active .dropdown .dropdown-item div.change-privacy {
-  background: url("/images/change-privacy.svg?v=675") ;
-}
-.dots.expanded .dropdown .dropdown-item div.delete, .dots.expanded:active .dropdown .dropdown-item div.delete {
-  background: url("/images/delete.svg?v=675") ;
-}
-.dots.expanded .dropdown .dropdown-item div.discuss, .dots.expanded:active .dropdown .dropdown-item div.discuss {
-  background: url("/images/discuss.svg?v=675") ;
-}
-.dots.expanded .dropdown .dropdown-item div.cancellation, .dots.expanded:active .dropdown .dropdown-item div.cancellation {
-  background: url("/images/cancellation.svg?v=675") ;
-}
-.dots.expanded .dropdown .dropdown-item div.change-appt, .dots.expanded:active .dropdown .dropdown-item div.change-appt {
-  background: url("/images/change-appt.svg?v=675") ;
-}
-.dots.expanded .dropdown .dropdown-item div.add-participants, .dots.expanded:active .dropdown .dropdown-item div.add-participants {
-  background: url("/images/add-participants.svg?v=675") ;
-}
-.dots.expanded .dropdown .dropdown-item div.leave-discussion, .dots.expanded:active .dropdown .dropdown-item div.leave-discussion {
-  background: url("/images/leave-discussion.svg?v=675") ;
-}
-.dots.expanded .dropdown .dropdown-item div.assign-to-me, .dots.expanded:active .dropdown .dropdown-item div.assign-to-me {
-  background: url("/images/assign-to-me.svg?v=675") ;
-}
-.dots.expanded .dropdown .dropdown-item div.assign-to-none, .dots.expanded:active .dropdown .dropdown-item div.assign-to-none {
-  background: url("/images/assign-to-none.svg?v=675") ;
-}
-.dots.expanded .dropdown .dropdown-item div.archive-message, .dots.expanded:active .dropdown .dropdown-item div.archive-message {
-  background: url("/images/archive-message.svg?v=675") ;
-}
-.dots.expanded .dropdown .dropdown-item div.unarchive-message, .dots.expanded:active .dropdown .dropdown-item div.unarchive-message {
-  background: url("/images/unarchive-message.svg?v=675") ;
-}
+
 .dots.expanded .dropdown .dropdown-item .data-point-action, .dots.expanded:active .dropdown .dropdown-item .data-point-action {
   height: 24px;
   font-family: Muli;
@@ -9214,11 +8736,7 @@ li.data-point .item-content .graphs-col {
   display: flex;
   align-items: center;
 }
-.messages .icon-and-text .icon {
-  background: url("/images/success-16.svg?v=675") ;
-  background-repeat: no-repeat;
-  margin-right: 16px;
-}
+
 .messages p {
   color: #FFF;
 }
@@ -9226,11 +8744,7 @@ li.data-point .item-content .graphs-col {
   color: #FFF;
   text-decoration: underline;
 }
-.messages .icon-close-x {
-  margin-left: 16px;
-  background: url("/images/x-16.svg?v=675") ;
-  background-repeat: no-repeat;
-}
+
 .messages:first-of-type {
   margin-top: 20px;
 }
@@ -9240,27 +8754,11 @@ li.data-point .item-content .graphs-col {
 .messages.error {
   background-color: #AD2424;
 }
-.messages.error .icon-and-text .icon {
-  background: url("/images/error-16.svg?v=675") ;
-}
+
 .messages.warning {
   background-color: #C04E0C;
 }
-.messages.warning .icon-and-text .icon {
-  background: url("/images/warning-16.svg?v=675") ;
-}
-.messages.information {
-  background-color: #3C7996;
-}
-.messages.information .icon-and-text .icon {
-  background: url("/images/info-16.svg?v=675") ;
-}
-.messages.progress {
-  background-color: #9C8E11;
-}
-.messages.progress .icon-and-text .icon {
-  background: url("/images/clock-16.svg?v=675") ;
-}
+
 
 .mobile-optimized #action-messages {
   margin-right: auto;
@@ -9290,13 +8788,6 @@ li.data-point .item-content .graphs-col {
   color: #000;
   align-items: baseline;
   display: flex;
-}
-.patient-locked-plan-info p > span.icon {
-  background: url("/images/lock-closed-patient-view.svg?v=675") ;
-  display: flex;
-  background-repeat: no-repeat;
-  margin-right: 8px;
-  margin-top: auto;
 }
 
 #lean_overlay {
@@ -9428,7 +8919,7 @@ li.data-point .item-content .graphs-col {
 }
 
 #welcome {
-  background: #FFF url("/images/hero.jpg?v=675") no-repeat 50% 50%;
+
   height: 230px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -9653,16 +9144,7 @@ table.monitoring .label {
   padding: 4px;
   width: 228px;
 }
-table.monitoring .dateline {
-  padding: 0;
-  width: 25px;
-  border: none !important;
-  background: #18586C url("/images/dateline-indicator.gif?v=675") no-repeat bottom right;
-  position: relative;
-}
-table.monitoring .dateline.freq {
-  background: #18586C url("/images/dateline_freq-indicator.gif?v=675") no-repeat bottom right;
-}
+
 table.monitoring tbody td {
   padding: 0;
 }
@@ -11372,17 +10854,6 @@ section.box.traffic {
   border: none;
 }
 
-section.box.traffic.green {
-  background: url("/images/green_tl.png?v=675") no-repeat 0 0;
-}
-
-section.box.traffic.amber {
-  background: url("/images/amber_tl.png?v=675") no-repeat 0 0;
-}
-
-section.box.traffic.red {
-  background: url("/images/red_tl.png?v=675") no-repeat 0 0;
-}
 
 section.box .traffic_inner {
   margin-left: 60px;
@@ -11436,50 +10907,7 @@ nav#forms ul li a.link-down {
   background-position: 99% -70px;
 }
 
-section.dashboard_box#blood h1 {
-  padding: 5px 0 5px 40px;
-  background: url("/images/organs/blood.jpg?v=675") no-repeat 0 0;
-}
 
-section.dashboard_box#bones h1 {
-  padding: 5px 0 5px 40px;
-  background: url("/images/organs/bones.jpg?v=675") no-repeat 0 0;
-}
-
-section.dashboard_box#gut h1 {
-  padding: 5px 0 5px 40px;
-  background: url("/images/organs/gut.jpg?v=675") no-repeat 0 0;
-}
-
-section.dashboard_box#heart h1 {
-  padding: 5px 0 5px 40px;
-  background: url("/images/organs/heart.jpg?v=675") no-repeat 0 0;
-}
-
-section.dashboard_box#hormones h1 {
-  padding: 5px 0 5px 40px;
-  background: url("/images/organs/hormones.jpg?v=675") no-repeat 0 0;
-}
-
-section.dashboard_box#kidneys h1 {
-  padding: 5px 0 5px 40px;
-  background: url("/images/organs/kidneys.jpg?v=675") no-repeat 0 0;
-}
-
-section.dashboard_box#liver h1 {
-  padding: 5px 0 5px 40px;
-  background: url("/images/organs/liver.jpg?v=675") no-repeat 0 0;
-}
-
-section.dashboard_box#lungs h1 {
-  padding: 5px 0 5px 40px;
-  background: url("/images/organs/lungs.jpg?v=675") no-repeat 0 0;
-}
-
-section.dashboard_box#reproductive h1 {
-  padding: 5px 0 5px 40px;
-  background: url("/images/organs/reproductive.jpg?v=675") no-repeat 0 0;
-}
 
 section.dashboard_box .test_inner form,
 section.dashboard_box .section_inner form {
@@ -11690,12 +11118,7 @@ table.library .edit-library-cell label:first-child {
   color: #00576D;
 }
 
-.ui-widget-overlay {
-  background: #aaaaaa url("images/ui-bg_flat_0_aaaaaa_40x100.png?v=675") 50% 50% repeat-x;
-  opacity: .3;
-  filter: Alpha(Opacity=30);
-  /* support: IE8; */
-}
+
 
 .ui-widget-overlay {
   position: fixed;
@@ -11750,11 +11173,6 @@ table.library .edit-library-cell label:first-child {
 .nhs-england-style #manageLibrary .nhs-navigation-menu {
   margin-bottom: 20px;
   margin-top: 16px;
-}
-.nhs-england-style #manageLibrary .nhs-navigation-menu .folder {
-  background: url("/images/folder.svg?v=675") ;
-  height: 17px;
-  min-width: 22px;
 }
 
 #manageLibrary .no-items {
@@ -11956,7 +11374,6 @@ body.login-page form h2 {
   display: block;
   padding: 10px;
   color: #FFF;
-  background: url("/images/blue_bar.png?v=675") repeat-x;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
@@ -11988,7 +11405,6 @@ body.login-page .inner-footer select {
 }
 body.login-page .inner-footer .logo {
   color: #333333;
-  background-image: url("/images/2014/footer-logo-dark.png?v=675");
   background-position: right center;
   background-repeat: no-repeat;
   float: right;
@@ -12207,36 +11623,13 @@ body.login-page .inner-footer .logo {
   margin-right: 8px;
   display: inline-block;
 }
-.btn-group-measurements.btn-group-lg > .btn i.vitals-24, .btn-group-measurements.btn-group-lg > .btn-arrow i.vitals-24 {
-  background: url("/images/vitals-24.svg?v=675") ;
-}
-.btn-group-measurements.btn-group-lg > .btn i.exercise-24, .btn-group-measurements.btn-group-lg > .btn-arrow i.exercise-24 {
-  background: url("/images/exercise-24.svg?v=675") ;
-}
-.btn-group-measurements.btn-group-lg > .btn i.diet-24, .btn-group-measurements.btn-group-lg > .btn-arrow i.diet-24 {
-  background: url("/images/diet-24.svg?v=675") ;
-}
-.btn-group-measurements.btn-group-lg > .btn i.sleep-24, .btn-group-measurements.btn-group-lg > .btn-arrow i.sleep-24 {
-  background: url("/images/sleep-24.svg?v=675") ;
-}
+
 .btn-group-measurements.btn-group-lg > .btn.active, .btn-group-measurements.btn-group-lg > .active.btn-arrow {
   box-shadow: none;
   height: 54px;
   color: #2B7D67;
   background-color: #FFF;
   border-bottom: 4px solid #2B7D67 !important;
-}
-.btn-group-measurements.btn-group-lg > .btn.active .vitals-24, .btn-group-measurements.btn-group-lg > .active.btn-arrow .vitals-24 {
-  background: url("/images/vitals-24-activated.svg?v=675") ;
-}
-.btn-group-measurements.btn-group-lg > .btn.active .exercise-24, .btn-group-measurements.btn-group-lg > .active.btn-arrow .exercise-24 {
-  background: url("/images/exercise-24-activated.svg?v=675") ;
-}
-.btn-group-measurements.btn-group-lg > .btn.active .diet-24, .btn-group-measurements.btn-group-lg > .active.btn-arrow .diet-24 {
-  background: url("/images/diet-24-activated.svg?v=675") ;
-}
-.btn-group-measurements.btn-group-lg > .btn.active .sleep-24, .btn-group-measurements.btn-group-lg > .active.btn-arrow .sleep-24 {
-  background: url("/images/sleep-24-activated.svg?v=675") ;
 }
 
 @media (max-width: 570px) {
@@ -12364,7 +11757,6 @@ form[data-role='privacy-flags'] input[type="radio"] {
 }
 
 .activityIcon {
-  background-image: url("/images/2014/action-sprites-blue-15.png?v=675");
   height: 16px;
   width: 16px;
   display: inline-block;
@@ -12541,16 +11933,6 @@ form[data-role='privacy-flags'] input[type="radio"] {
   display: flex;
   align-items: center;
   padding: 0 8px;
-}
-.plan-display-url #plan-link-container button .icon {
-  margin-right: 4px;
-  background: url("/images/link-24.svg?v=675") ;
-}
-.plan-display-url #plan-link-container button:hover .icon {
-  background: url("/images/link-24.svg?v=675") ;
-}
-.plan-display-url #plan-link-container button:active .icon {
-  background: url("/images/link-24-activated.svg?v=675") ;
 }
 
 .plan-action-plan ul {
@@ -13114,7 +12496,6 @@ details summary {
 }
 details summary .details-closed {
   transition: transform 0.5s;
-  background: url("/images/care-plan-details-arrow-up.svg?v=675") ;
   flex-shrink: 0;
   height: 24px;
   min-width: 30px;
@@ -13149,27 +12530,6 @@ details[open] summary .details-closed {
 }
 #social-care-page div.icon-24 {
   margin-right: 8px;
-}
-#social-care-page div.icon-24.social-worker-icon {
-  background-image: url("../../images/social-worker.svg?v=675");
-}
-#social-care-page div.icon-24.phone-icon {
-  background-image: url("../../images/phone.svg?v=675");
-}
-#social-care-page div.icon-24.care-package-icon {
-  background-image: url("../../images/diary.svg?v=675");
-}
-#social-care-page div.icon-24.clock-icon {
-  background-image: url("../../images/clock.svg?v=675");
-}
-#social-care-page div.icon-24.assessments-icon {
-  background-image: url("../../images/appointments.svg?v=675");
-}
-#social-care-page div.icon-24.case-notes-icon {
-  background-image: url("../../images/journal.svg?v=675");
-}
-#social-care-page div.icon-24.communication-needs-icon {
-  background-image: url("../../images/communication-needs.svg?v=675");
 }
 #social-care-page .source-name {
   margin-bottom: 20px;
@@ -13259,8 +12619,7 @@ details[open] summary .details-closed {
   text-align: center;
 }
 #social-care-page .no-data .socialcare-hover-icon {
-  background-image: url("../../images/socialcare-hover.svg?v=675");
-  display: inline-block;
+    display: inline-block;
   width: 48px;
   height: 48px;
 }
@@ -13625,10 +12984,6 @@ table.symptoms, table.symptom {
   display: none;
 }
 
-.comment {
-  background: url("/images/comment.svg?v=675") ;
-}
-
 #test-history-form {
   clear: both;
 }
@@ -13889,8 +13244,7 @@ ul.legend li span {
   width: 30px;
   position: absolute;
   background-repeat: no-repeat;
-  background-image: url("/images/2014/pan-arrows.png?v=675");
-  background-color: #3C7996;
+   background-color: #3C7996;
   bottom: 0;
   cursor: pointer;
   height: 62px;
@@ -14254,8 +13608,7 @@ section.drill-down-view.sibling:not(:last-child) ul.legend {
   justify-content: right;
 }
 #test-results-latest .data-point .thin-chevron {
-  background: url("/images/thin-chevron.svg?v=675") ;
-  height: 12px;
+    height: 12px;
   min-width: 7px;
   margin-left: 8px;
   margin-top: 4px;
@@ -14356,14 +13709,12 @@ section.drill-down-view.sibling:not(:last-child) ul.legend {
   min-width: 10px;
 }
 .sharing .consent-entity .category-content .bullet-text a:hover .icon-add {
-  background: url("/images/add-24-hovered.svg?v=675") ;
-  background-size: contain;
+   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
   display: inline-block;
 }
 .sharing .consent-entity .triangle {
-  background: url("/images/triangle.svg?v=675") ;
   margin-top: 4px;
   height: 12px;
   margin-left: 16px;
@@ -14510,12 +13861,6 @@ section.drill-down-view.sibling:not(:last-child) ul.legend {
   -o-transform: rotate(90deg);
   transform: rotate(90deg);
 }
-.pie-container .slice span.lock {
-  background: url("/images/lock.svg?v=675") ;
-}
-.pie-container .slice.enabled span.tick {
-  background: url("/images/tick.svg?v=675") ;
-}
 .pie-container .general {
   -moz-transform: rotate(315deg);
   -webkit-transform: rotate(315deg);
@@ -14620,21 +13965,7 @@ section.drill-down-view.sibling:not(:last-child) ul.legend {
     min-width: 185px;
   }
 }
-.privacy-checkboxes .checkbox-new div.privacy-locked-24 {
-  background: url("/images/privacy-locked-24.svg?v=675") ;
-}
-.privacy-checkboxes .checkbox-new div.enabled.privacy-general-updated-24 {
-  background: url("/images/privacy-general-updated-24.svg?v=675") ;
-}
-.privacy-checkboxes .checkbox-new div.enabled.privacy-social-updated-24 {
-  background: url("/images/privacy-social-updated-24.svg?v=675") ;
-}
-.privacy-checkboxes .checkbox-new div.enabled.privacy-sexual-updated-24 {
-  background: url("/images/privacy-sexual-updated-24.svg?v=675") ;
-}
-.privacy-checkboxes .checkbox-new div.enabled.privacy-mental-updated-24 {
-  background: url("/images/privacy-mental-updated-24.svg?v=675") ;
-}
+
 
 /* ==========================================================================
    Settings Page displayed on eg /auth/manageUserProfileForm.action?contextUserId=1615
@@ -14758,23 +14089,6 @@ div.header-banner .title-bar h1 {
   text-shadow: 1px 1px black;
 }
 
-div.consent {
-  height: 270px;
-  background-image: url("/images/2014/headers/Consent_Header_Asset.jpg?v=675");
-}
-
-h2.consent-header {
-  background-image: url("/images/2014/blue-tick.png?v=675");
-  background-repeat: no-repeat;
-  color: #000;
-  display: block;
-  font-size: 1.4em;
-  font-weight: bold;
-  height: 40px;
-  line-height: 40px;
-  margin: 25px 0;
-  padding-left: 60px;
-}
 
 /* @end */
 div.graph-wrapper {
@@ -14873,18 +14187,7 @@ div.graph-wrapper {
   letter-spacing: normal;
   vertical-align: bottom;
 }
-.privacy-label div.privacy-general-16 {
-  background: url("/images/privacy-general-16.svg?v=675") ;
-}
-.privacy-label div.privacy-social-16 {
-  background: url("/images/privacy-social-16.svg?v=675") ;
-}
-.privacy-label div.privacy-sexual-16 {
-  background: url("/images/privacy-sexual-16.svg?v=675") ;
-}
-.privacy-label div.privacy-mental-16 {
-  background: url("/images/privacy-mental-16.svg?v=675") ;
-}
+
 .privacy-label span {
   padding-left: 0.2875em;
 }
@@ -15213,18 +14516,7 @@ div.graph-wrapper {
   text-decoration: none;
   padding-bottom: 8px;
 }
-.nhs-england-style .content-toggle:focus .nhs-minus-icon {
-  background: url("/images/nhs-minus-icon-black.svg?v=675") ;
-}
-.nhs-england-style .content-toggle:focus .nhs-plus-icon {
-  background: url("/images/nhs-plus-icon-black.svg?v=675") ;
-}
-.nhs-england-style .content-toggle .nhs-minus-icon {
-  background: url("/images/nhs-minus-icon.svg?v=675") ;
-}
-.nhs-england-style .content-toggle .nhs-plus-icon {
-  background: url("/images/nhs-plus-icon.svg?v=675") ;
-}
+
 .nhs-england-style .content-toggle .nhs-minus-icon, .nhs-england-style .content-toggle .nhs-plus-icon {
   margin-right: 6px;
 }
@@ -15250,9 +14542,7 @@ div.graph-wrapper {
 .nhs-england-style .link-with-icon:focus {
   text-decoration: none;
 }
-.nhs-england-style .link-with-icon:focus .nhs-link-icon {
-  background: url("/images/nhs-link-icon-black.svg?v=675") ;
-}
+
 .nhs-england-style .link-with-icon:focus .image-and-title {
   background-color: #FFEB3B;
   color: #212b32;
@@ -15261,10 +14551,7 @@ div.graph-wrapper {
 .nhs-england-style .link-with-icon:focus .image-and-title .item-title {
   color: #212b32;
 }
-.nhs-england-style .link-with-icon .nhs-link-icon {
-  background: url("/images/nhs-link-icon.svg?v=675") ;
-  margin-right: 6px;
-}
+
 .nhs-england-style .link-with-icon .image-and-title {
   display: flex;
   align-items: center;
@@ -15490,7 +14777,6 @@ div.graph-wrapper {
   margin: 0;
 }
 .nhs-england-style .section.message-box .upside-down-triangle {
-  background: url("/images/upside-down-triangle.svg?v=675") ;
   width: 24px;
   margin-top: -1px;
   margin-left: 24px;
@@ -15526,7 +14812,6 @@ div.graph-wrapper {
 @supports (-webkit-appearance: none) or (-moz-appearance: none) {
   .nhs-england-style .nhs-checkbox input[type='checkbox']:checked {
     border-color: #212B32;
-    background: url("/images/nhs-tick-checkbox.svg?v=675") #FFF no-repeat center;
   }
 }
 .nhs-england-style .nhs-checkbox input[type='checkbox']:focus, .nhs-england-style .nhs-checkbox input[type='checkbox']:focus:checked {
@@ -15576,10 +14861,7 @@ div.graph-wrapper {
   margin-top: 30px;
   display: flex;
 }
-.nhs-england-style .nhs-info-notification .nhs-info-icon {
-  margin-right: 10px;
-  background: url("/images/nhs-info-icon.svg?v=675") ;
-}
+
 .nhs-england-style .nhs-info-notification .info-text {
   margin-top: 2px;
 }
