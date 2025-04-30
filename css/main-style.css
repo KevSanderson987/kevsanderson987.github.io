@@ -531,20 +531,19 @@ table {
 
 @font-face {
   font-family: "Muli";
-  src: url("../fonts/Muli.ttf?v=675");
+  src: url("../fonts/Muli.ttf");
   font-style: normal;
   font-weight: 100 900;
 }
 @font-face {
   font-family: "Mulish";
-  src: url("../fonts/Mulish-VariableFont_wght.ttf?v=675");
+  src: url("../fonts/Mulish-VariableFont_wght.ttf");
   font-style: normal;
   font-weight: 100 700 900;
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url("fonts/glyphicons-halflings-regular.eot?v=675");
-  src: url("fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff2?v=675") format("woff2"), url("../fonts/glyphicons-halflings-regular.woff?v=675") format("woff"), url("../fonts/glyphicons-halflings-regular.ttf?v=675") format("truetype"), url("../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
+  src: url("../fonts/glyphicons-halflings-regular.eot");
 }
 /* ===========================
    Base
@@ -3188,10 +3187,6 @@ footer.nhs-style .bottom-row #select-locale {
   height: 58px;
   border-radius: 0;
   border: 2px solid #4c6272;
-}
-footer.nhs-style .bottom-row .copyright {
-  padding-right: 35px;
-  background: url("/images/pkb-logo-nhs-footer.svg?v=675") no-repeat 100% 50%;
 }
 
 /* ==|====================
