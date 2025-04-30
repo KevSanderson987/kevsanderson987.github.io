@@ -531,19 +531,19 @@ table {
 
 @font-face {
   font-family: "Muli";
-  src: url("../fonts/Muli.ttf");
+  src: url("./fonts/Muli.ttf");
   font-style: normal;
   font-weight: 100 900;
 }
 @font-face {
   font-family: "Mulish";
-  src: url("../fonts/Mulish-VariableFont_wght.ttf");
+  src: url("./fonts/Mulish-VariableFont_wght.ttf");
   font-style: normal;
   font-weight: 100 700 900;
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url("../fonts/glyphicons-halflings-regular.eot");
+  src: url("./fonts/glyphicons-halflings-regular.eot");
 }
 /* ===========================
    Base
