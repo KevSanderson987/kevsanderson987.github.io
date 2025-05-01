@@ -35,7 +35,7 @@
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/FrutigerLTW01-55Roman.eot?#iefix");
-  src: url("../fonts/FrutigerLTW01-55Roman.eot?#iefix") format("eot"), url("../fonts/FrutigerLTW01-55Roman.woff2?v=683-RC3") format("woff2"), url("../fonts/FrutigerLTW01-55Roman.woff?v=683-RC3") format("woff"), url("../fonts/FrutigerLTW01-55Roman.ttf?v=683-RC3") format("truetype"), url("../fonts/FrutigerLTW01-55Roman.svg#7def0e34-f28d-434f-b2ec-472bde847115") format("svg");
+  src: url("../fonts/FrutigerLTW01-55Roman.eot?#iefix") format("eot"), url("../fonts/FrutigerLTW01-55Roman.woff2") format("woff2"), url("../fonts/FrutigerLTW01-55Roman.woff") format("woff"), url("../fonts/FrutigerLTW01-55Roman.ttf") format("truetype"), url("../fonts/FrutigerLTW01-55Roman.svg#7def0e34-f28d-434f-b2ec-472bde847115") format("svg");
 }
 @font-face {
   font-family: 'Frutiger W01';
@@ -43,7 +43,7 @@
   font-style: normal;
   font-weight: 600;
   src: url("../fonts/FrutigerLTW01-65Bold.eot?#iefix");
-  src: url("../fonts/FrutigerLTW01-65Bold.eot?#iefix") format("eot"), url("../fonts/FrutigerLTW01-65Bold.woff2?v=683-RC3") format("woff2"), url("../fonts/FrutigerLTW01-65Bold.woff?v=683-RC3") format("woff"), url("../fonts/FrutigerLTW01-65Bold.ttf?v=683-RC3") format("truetype"), url("../fonts/FrutigerLTW01-65Bold.svg#eae74276-dd78-47e4-9b27-dac81c3411ca") format("svg");
+  src: url("../fonts/FrutigerLTW01-65Bold.eot?#iefix") format("eot"), url("../fonts/FrutigerLTW01-65Bold.woff2") format("woff2"), url("../fonts/FrutigerLTW01-65Bold.woff") format("woff"), url("../fonts/FrutigerLTW01-65Bold.ttf") format("truetype"), url("../fonts/FrutigerLTW01-65Bold.svg#eae74276-dd78-47e4-9b27-dac81c3411ca") format("svg");
 }
 .nhsapp {
   font-family: "Frutiger W01";
@@ -468,7 +468,7 @@
   text-decoration: none;
 }
 .nhs-england-style .link-with-icon:focus .nhs-link-icon {
-  background: url("/images/nhs-link-icon-black.svg?v=683-RC3") ;
+  
 }
 .nhs-england-style .link-with-icon:focus .image-and-title {
   background-color: #FFEB3B;
@@ -479,7 +479,7 @@
   color: #212b32;
 }
 .nhs-england-style .link-with-icon .nhs-link-icon {
-  background: url("/images/nhs-link-icon.svg?v=683-RC3") ;
+  
   margin-right: 6px;
 }
 .nhs-england-style .link-with-icon .image-and-title {
@@ -743,7 +743,7 @@
   margin: 0;
 }
 .nhs-england-style .section.message-box .upside-down-triangle, .nhs-england-style .section.nhs-danger-box .upside-down-triangle {
-  background: url("/images/upside-down-triangle.svg?v=683-RC3") ;
+  
   width: 24px;
   margin-top: -1px;
   margin-left: 24px;
@@ -779,7 +779,7 @@
   background-color: #005eb8;
 }
 .nhs-england-style .section.message-box .upside-down-triangle {
-  background: url("/images/upside-down-triangle.svg?v=683-RC3") ;
+  
 }
 .nhs-england-style .section.message-box .section-simple-content {
   padding: 0 16px 16px 16px;
@@ -791,7 +791,7 @@
   background-color: #d5281b;
 }
 .nhs-england-style .section.nhs-danger-box .upside-down-triangle {
-  background: url("/images/upside-down-triangle-red.svg?v=683-RC3") ;
+  
 }
 .nhs-england-style .section.nhs-danger-box .section-simple-content {
   padding: 0 16px 16px 16px;
@@ -825,7 +825,7 @@
 @supports (-webkit-appearance: none) or (-moz-appearance: none) {
   .nhs-england-style .nhs-checkbox input[type='checkbox']:checked {
     border-color: #212b32;
-    background: url("/images/nhs-tick-checkbox.svg?v=683-RC3") #FFF no-repeat center;
+    
   }
 }
 .nhs-england-style .nhs-checkbox input[type='checkbox']:focus, .nhs-england-style .nhs-checkbox input[type='checkbox']:focus:checked {
@@ -877,7 +877,7 @@
 }
 .nhs-england-style .nhs-info-notification .nhs-info-icon {
   margin-right: 10px;
-  background: url("/images/nhs-info-icon.svg?v=683-RC3") ;
+  
 }
 .nhs-england-style .nhs-info-notification .info-text {
   margin-top: 2px;
