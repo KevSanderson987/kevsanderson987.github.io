@@ -441,7 +441,6 @@
   text-decoration: none;
   padding-bottom: 8px;
 }
-
 .nhs-england-style .content-toggle .nhs-minus-icon, .nhs-england-style .content-toggle .nhs-plus-icon {
   margin-right: 6px;
 }
@@ -468,7 +467,7 @@
   text-decoration: none;
 }
 .nhs-england-style .link-with-icon:focus .nhs-link-icon {
-  
+  margin-right: 6px;
 }
 .nhs-england-style .link-with-icon:focus .image-and-title {
   background-color: #FFEB3B;
@@ -479,7 +478,7 @@
   color: #212b32;
 }
 .nhs-england-style .link-with-icon .nhs-link-icon {
-  
+
   margin-right: 6px;
 }
 .nhs-england-style .link-with-icon .image-and-title {
