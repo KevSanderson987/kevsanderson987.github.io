@@ -1,64 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="https://my.patientsknowbest.com/images/favicon.ico" type="image/ico">
-  <title>Patients Know Best - Error</title>
-  <link rel="stylesheet" href="./css/main-style.css" type="text/css">
 </head>
-<body class="centred-layout login-page">
-  <div id="header">
-    <h1 id="logo">
-    </h1>
-  <div id="inner" class="login-container">
-    <br>
-      <img src="./images/Shape.png" width="80" height="80" >
-        <h1>Patients Know Best encountered an error</h1><br>
-      <img src="./images/spacer.png" width="20" height="20" ><br>
-Please raise a support ticket at:<br>
-    <a href="https://patientsknowbest.com/contact-us/" target="_blank"><div class="hyperlink">https://patientsknowbest.com/contact-us/</div></a>
-    <br>
-In the message field, please include the error<br>
-details to help us resolve the issue efficiently.<br>
-    <table class="error-table">
-      <tr>
-        <td class="laligned"><b>Error details</b></td>
-        <td class="raligned"><button class="copy-button" onclick="copyText()"><img src="./images/clipboardAndText.png" width="146" height="20" alt="Copy to clipboard"></button></td>
-
-      </tr>
-      <tr>
-        <td colspan="2" class="center">
-          <label for="CfErrorText"></label><textarea class="error-textbox" cols=40 rows=10 id="CfErrorText">
-Cloudflare Ray ID:
-::RAY_ID::
-
-IP Address:
-::CLIENT_IP_ADDRESS::
-</textarea>
-          <br>Without this information, we may not be <br>able to resolve the problem effectively:
-        </td>
-      </tr>
-    <tr>
-      <td class="laligned"><b>&#174; <script>document.write(new Date().getFullYear())</script> PKB</b></td>
-      <td class="raligned"><a href="https://www.pkbstatus.com" target="_blank"><b>System Status</b></a></td>
-    </tr>
-      <tr>
-        <td colspan="2"></td>
-      </tr>
-  </table>
-<script>
-      function copyText() {
-          var text = document.getElementById("CfErrorText");
-          text.select();
-          document.execCommand("copy");
-          document.getElementById("copiedMessage").style.display = "block";
-          setTimeout(function(){
-           //document.getElementById("copiedMessage").style.display = "none";
-         }, 2000); // Hide message after 2 seconds.
-      }
-  </script>
-</div></div>
+<body>
 </body>
 </html>
