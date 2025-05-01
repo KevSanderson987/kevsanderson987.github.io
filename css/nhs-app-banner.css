@@ -441,17 +441,6 @@
   text-decoration: none;
   padding-bottom: 8px;
 }
-.nhs-england-style .content-toggle:focus .nhs-minus-icon {
-  background: url("/images/nhs-minus-icon-black.svg?v=683-RC3") ;
-}
-.nhs-england-style .content-toggle:focus .nhs-plus-icon {
-  background: url("/images/nhs-plus-icon-black.svg?v=683-RC3") ;
-}
-.nhs-england-style .content-toggle .nhs-minus-icon {
-  background: url("/images/nhs-minus-icon.svg?v=683-RC3") ;
-}
-.nhs-england-style .content-toggle .nhs-plus-icon {
-  background: url("/images/nhs-plus-icon.svg?v=683-RC3") ;
 }
 .nhs-england-style .content-toggle .nhs-minus-icon, .nhs-england-style .content-toggle .nhs-plus-icon {
   margin-right: 6px;
