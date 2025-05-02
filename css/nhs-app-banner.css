@@ -413,6 +413,7 @@
   outline: 4px solid #FFEB3B !important;
   outline-offset: 0;
   transition: box-shadow 0s;
+  
 }
 .nhs-england-style .select2-container-multi.select2-container-active .select2-choices {
   border-color: #212b32;
@@ -949,3 +950,22 @@
 .nhs-england-style a.nhs-card-link:focus:hover .nhs-card-text {
   text-decoration: none;
 }
+
+
+.table-align-center {
+    align: center;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.table-errortext {
+    text-align: center;
+    display: flex;
+    width: 100%;
+}
+
+
+
+                        
