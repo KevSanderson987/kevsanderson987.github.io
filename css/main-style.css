@@ -1973,3 +1973,10 @@ div.graph-wrapper {
   text-decoration: underline;
   text-underline: #00576D;
 }
+ .hyperlink-nounderline {
+   font-size: 14px;
+   font-weight: 700;
+   color: #00576D;
+   text-decoration: none;
+   text-underline: #00576D;
+ }
